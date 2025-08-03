@@ -3,7 +3,7 @@ body {
   background-color: black;
   height: 100%;
   width: 100%;
-  background-image: url("newbg.jpg");
+  background-image: url("images/newbg.jpg");
   align-items: center;
   justify-content: center;
   background-attachment: fixed;
@@ -19,7 +19,7 @@ body::before {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url("newbg.jpg") center center;
+  background: url("images/newbg.jpg") center center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -151,7 +151,7 @@ body::before {
 
 .spark-hero {
   position: relative;
-  /* background-image: url("firebg.png"); */
+  /* background-image: url("images/firebg.png"); */
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -160,6 +160,7 @@ body::before {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: 80px;
 }
 
 .overlay {
@@ -380,4 +381,19 @@ hr {
   border-top: 1px solid rgb(65, 23, 23);
   margin: 1em 0;
   padding: 3rem;
+}
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: #fff;
+}
+
+footer a {
+  color: cyan;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

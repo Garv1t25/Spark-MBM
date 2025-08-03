@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background-image: url("newbg.jpg");
+  background-image: url("images/newbg.jpg");
   background-attachment: fixed;
   color: white;
   max-width: 100%;
@@ -140,10 +140,12 @@ body {
   flex-direction: column;
   background: #111827;
   backdrop-filter: blur(8px);
-  padding: 10px;
+  padding: 10px 7px;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   z-index: 999;
+  filter: opacity(0.7);
+  transition: 0.5s all;
 }
 .social-bar a {
   color: #ffffff;
@@ -151,6 +153,9 @@ body {
   padding: 12px;
   font-size: 20px;
   transition: color 0.3s ease;
+}
+.social-bar:hover{
+  filter: opacity(1);
 }
 .social-bar a:hover {
   color: yellow;
@@ -284,7 +289,7 @@ body {
   z-index: 10;
 }
 .hero-section {
-  padding: 6rem 1rem;
+  padding: 6rem 4rem;
 }
 .container {
   max-width: 1280px;
@@ -338,7 +343,8 @@ body {
   }
 }
 .primary-btn {
-  background: linear-gradient(270deg, #ff0000, #ff6a00, #ffd700);
+  background: linear-gradient(270deg, #e00000, #e76000, #e4c200);
+  /* background: linear-gradient(270deg, #d70b0b, #ff6a00, #ffd700); */
   color: white;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -350,8 +356,10 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .primary-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px yellow;
+  transform: scale(1.02);
+  transform: translateY(-3px);
+  box-shadow: 0 0 8px rgb(108, 108, 0);
+  cursor: pointer;
 }
 .secondary-btn {
   background: transparent;
@@ -361,9 +369,12 @@ body {
   font-size: 1rem;
   border-radius: 9999px;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .secondary-btn:hover {
   background: white;
+  transform: scale(1.02);
+  transform: translateY(-2px);
   color: #111827;
 }
 .icon {
@@ -512,6 +523,7 @@ body {
   margin: 0.5rem 0;
   border-radius: 0;
   filter: brightness(100%);
+  border-radius: 5px;
 }
 
 .h-upper {
@@ -601,7 +613,7 @@ body {
   }
 }
 .gallery-title {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: orangered;
   margin: 2rem 0 1rem;
   text-transform: uppercase;
@@ -611,14 +623,14 @@ body {
 }
 .mentor-section {
   background: transparent;
-  padding: 4rem 1rem;
+  padding: 4rem 0rem;
   text-align: center;
 }
 .mentor-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 .mentor-container img {
   border-radius: 50%;
@@ -663,4 +675,19 @@ body {
   margin-bottom: 20px;
   color: white;
   font-weight: 1000;
+}
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: #fff;
+}
+
+footer a {
+  color: cyan;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
